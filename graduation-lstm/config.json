@@ -1,0 +1,32 @@
+{
+    "data": {
+        "filename": "features.xls",
+        "columns": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            11
+        ],
+        "sequence_length": 20,
+        "train_test_split": 0.75
+    },
+    "training": {
+        "epochs": 5000,
+        "batch_size": 120
+    },
+    "model": {
+        "loss": "mse",
+        "optimizer": "adam",
+        "layers":
+            {
+                "type": "lstm",
+                "layers": 2,
+                "neurons": 100,
+                "input_dim": 6,
+                "output_dim": 1
+            },
+        "save_model": 1
+    }
+}
